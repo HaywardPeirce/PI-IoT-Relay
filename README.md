@@ -21,6 +21,8 @@ Follow the adafruit.io installation instructions
 
 Place the python script in the pi home directory
 
+Place the Adafruit APIkey in a files in the pi user home directory called apikey.txt
+
 Place the relayservice.conf file in /etc/init
 
 Reboot the Pi
