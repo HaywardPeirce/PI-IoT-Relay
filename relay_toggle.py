@@ -1,9 +1,17 @@
 #!/usr/bin/env python
 
+import os
+import os.path
 import time 
 import RPi.GPIO as io 
 io.setmode(io.BCM) 
 
+#Read the Adafruit API key in from file /home/pi/apikey.txt.
+file = open('/home/pi/apikey.txt', 'r')
+apikey = file.readline().replace("\n", '')
+file.close()
+
+# Import library and create instance of REST client.
 from Adafruit_IO import Client
 aio = Client('')
 
