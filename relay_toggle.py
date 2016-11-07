@@ -13,7 +13,7 @@ file.close()
 
 # Import library and create instance of REST client.
 from Adafruit_IO import Client
-aio = Client('')
+aio = Client(apikey)
 
 #use software pin numbering
 relay1_pin = 23
